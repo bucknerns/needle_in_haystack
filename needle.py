@@ -4,11 +4,9 @@ from collections import Counter
 def get_min(match, string, last=True):
     if match is None:
         return string
-    if len(match) > len(string):
-        return string
-    elif len(match) < len(string):
-        return match
-    elif last:
+    if len(match) == len(string):
+        return string if last else match
+    elif len(match) > len(string):
         return string
     else:
         return match
@@ -53,6 +51,4 @@ def ninh(needle, haystack):
             if is_match(n_count, haystack[start:end]):
                 match = get_min(match, haystack[start:end])
             else:
-                start -= 1
                 state = STATES.MEND
-
