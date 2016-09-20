@@ -1,1 +1,1 @@
-include README.md LICENSE pip-requires
+include README.md LICENSE pip-requires test-requires
