@@ -21,8 +21,8 @@ setup(
     include_package_data=True,
     install_requires=read("pip-requires").split("\n"),
     license=read("LICENSE"),
-    classifiers=(
+    classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
         "Natural Language :: English",
-        "Programming Language :: Python"))
+        "Programming Language :: Python"])
