@@ -11,7 +11,7 @@ def read(fname):
 
 setup(
     name="needle-in-haystack",
-    version="0.0.3",
+    version="0.0.4",
     description="Needle in haystack interview question",
     long_description=read("README.md"),
     author="Nathan Buckner",
